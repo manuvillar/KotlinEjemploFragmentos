@@ -1,0 +1,4 @@
+<resources>
+    <!-- Tema Material 3 sin ActionBar: el título lo ponemos nosotros en el layout -->
+    <style name="Theme.FragmentosEstaticosDinamicos" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fragmentos</string>
+    <string name="titulo">Fragmentos estáticos y dinámicos</string>
+
+    <!-- Fragmento estático -->
+    <string name="etiqueta_estatico">FRAGMENTO ESTÁTICO</string>
+    <string name="texto_cabecera">Estoy declarado en el layout de la Activity con android:name. El botón no me afecta: nunca me sustituyen.</string>
+
+    <!-- Activity -->
+    <string name="hint_nombre">Tu nombre</string>
+    <string name="cambiar">Cambiar fragmento</string>
+
+    <!-- Fragmentos dinámicos -->
+    <string name="etiqueta_dinamico">FRAGMENTO DINÁMICO</string>
+    <string name="titulo_primero">Soy el PrimerFragment</string>
+    <string name="titulo_segundo">Soy el SegundoFragment</string>
+    <string name="saludo">Hola, %1$s</string>
+    <string name="anonimo">anónimo</string>
+    <string name="explicacion_dinamico">Me ha cargado la Activity con una transacción. Pulsa Atrás para volver al fragmento anterior.</string>
+</resources>
