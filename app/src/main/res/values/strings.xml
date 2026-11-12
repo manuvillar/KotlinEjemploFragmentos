@@ -6,6 +6,12 @@
     <string name="etiqueta_estatico">FRAGMENTO ESTÁTICO</string>
     <string name="texto_cabecera">Estoy declarado en el layout de la Activity con android:name. El botón no me afecta: nunca me sustituyen.</string>
 
+    <!-- Diálogo de ayuda (AyudaDialog) -->
+    <string name="que_es_esto">¿Qué es esto?</string>
+    <string name="ayuda_titulo">Fragmentos estáticos y dinámicos</string>
+    <string name="ayuda_mensaje">El fragmento de arriba es ESTÁTICO: está declarado en el layout de la Activity y nunca cambia.\n\nEl de abajo es DINÁMICO: la Activity lo sustituye con una transacción cada vez que pulsas el botón, y Atrás deshace el cambio.\n\nPrueba a girar la pantalla con este diálogo abierto: como es un DialogFragment, no desaparece.</string>
+    <string name="entendido">Entendido</string>
+
     <!-- Activity -->
     <string name="hint_nombre">Tu nombre</string>
     <string name="cambiar">Cambiar fragmento</string>

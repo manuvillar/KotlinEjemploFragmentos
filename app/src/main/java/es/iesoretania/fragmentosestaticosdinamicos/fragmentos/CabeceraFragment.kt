@@ -32,6 +32,19 @@ class CabeceraFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Mostramos el diálogo de ayuda.
+        // Desde un fragmento se usa childFragmentManager (el FragmentManager de
+        // los fragmentos que viven DENTRO de este fragmento). Desde una Activity
+        // sería supportFragmentManager. La cadena "ayuda" es una etiqueta para
+        // poder encontrar el diálogo más tarde si hiciera falta.
+        binding.btnAyuda.setOnClickListener {
+            AyudaDialog().show(childFragmentManager, "ayuda")
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         // La vista se destruye: soltamos el binding para no retenerla en memoria

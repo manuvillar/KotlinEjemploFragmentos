@@ -22,4 +22,14 @@
         android:layout_marginTop="4dp"
         android:text="@string/texto_cabecera"
         android:textColor="?attr/colorOnSecondaryContainer" />
+
+    <!-- Botón de texto que abre el diálogo de ayuda (AyudaDialog) -->
+    <Button
+        android:id="@+id/btnAyuda"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/que_es_esto"
+        android:textColor="?attr/colorOnSecondaryContainer" />
 </LinearLayout>

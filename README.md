@@ -6,6 +6,7 @@ Una sola pantalla con los dos tipos de fragmentos:
 
 - **Arriba, un fragmento estático** (`CabeceraFragment`): declarado en `activity_main.xml` con `FragmentContainerView` y `android:name`. Nunca cambia.
 - **Abajo, un contenedor dinámico**: el botón alterna entre `PrimerFragment` y `SegundoFragment` con `replace` + `addToBackStack`. El botón Atrás deshace el cambio.
+- **Diálogo de ayuda**: `AyudaDialog` es un `DialogFragment` que se abre desde el fragmento estático con `childFragmentManager`.
 - **Paso de datos**: el nombre escrito en el campo de texto se envía a los fragmentos dinámicos como argumento (`bundleOf`) y lo leen con `requireArguments()`.
 
 ## Qué observar
@@ -14,6 +15,8 @@ Una sola pantalla con los dos tipos de fragmentos:
 2. Pulsa **Atrás**: vuelve el fragmento anterior, con el nombre que tenía.
 3. **Gira la pantalla**: en horizontal se usa `layout-land` y no se duplica ningún fragmento (`savedInstanceState == null`).
 4. Cada fragmento muestra un **Toast** en `onStart`, `onResume`, `onPause`, `onStop`, `onDestroyView` y `onDestroy`. Al pulsar el botón solo aparecen los de los fragmentos dinámicos: el estático no se entera.
+
+5. Pulsa **¿Qué es esto?** en el fragmento estático: se abre un `DialogFragment` de ayuda (`AyudaDialog`). Gira la pantalla con el diálogo abierto: sigue ahí, porque lo gestiona el FragmentManager.
 
 ## Requisitos
 
